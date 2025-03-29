@@ -1,0 +1,70 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* BMI Calculator */
+#bmiResult {
+    color:black;
+    font-weight: bold;
+}
+
+/* Temperature Converter */
+#tempResult {
+    color:black;
+}
+
+/* To-Do List */
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin: 5px 0;
+}
+
+li.task-completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+button {
+    padding: 5px 10px;
+    background-color:black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:black;
+}
+
+/* Registration Form */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    margin: 5px 0;
+    padding: 5px;
+    width: 200px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+/* Chatbot */
+#chatbotResponse {
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
+}

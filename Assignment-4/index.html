@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1> Assignment-4</h1>
+
+    <!-- BMI Calculator -->
+    <h2>BMI Calculator</h2>
+    <label for="weight">Weight (kg): </label><input type="number" id="weight" />
+    <label for="height">Height (m): </label><input type="number" id="height" />
+    <button onclick="calculateBMI()">Calculate BMI</button>
+    <p id="bmiResult"></p>
+
+    <!-- Temperature Converter -->
+    <h2>Temperature Converter</h2>
+    <label for="temp">Temperature (°C): </label><input type="number" id="temp" />
+    <button onclick="convertTemperature()">Convert to Fahrenheit</button>
+    <p id="tempResult"></p>
+
+    <!-- To-Do List -->
+    <h2>To-Do List</h2>
+    <input type="text" id="todoInput" placeholder="Enter task" />
+    <button onclick="addTask()">Add Task</button>
+    <ul id="todoList"></ul>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+        <label for="name">Name: </label><input type="text" id="name" /><br>
+        <label for="email">Email: </label><input type="email" id="email" /><br>
+        <label for="phone">Phone: </label><input type="tel" id="phone" /><br>
+        <label for="password">Password: </label><input type="password" id="password" /><br>
+        <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+    <div id="formMessages"></div>
+
+    <!-- Date & Time -->
+    <h2>Current Date & Time</h2>
+    <p id="dateTime"></p>
+
+    <!-- Weather API -->
+    <h2>Weather Information</h2>
+    <input type="text" id="city" placeholder="Enter City Name" />
+    <button onclick="fetchWeather()">Get Weather</button>
+    <p id="weatherInfo"></p>
+
+    <!-- Chatbot -->
+    <h2>Simple Chatbot</h2>
+    <input type="text" id="chatbotInput" placeholder="Ask me something" />
+    <button onclick="chatbotResponse()">Send</button>
+    <p id="chatbotResponse"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
