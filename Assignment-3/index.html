@@ -1,0 +1,59 @@
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment-3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()"> Dark Mode</button>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="overlay">
+            <h1>Welcome to My Assigment-3</h1>
+            <p>Using HTML and CSS for a beautiful layout</p>
+        </div>
+    </section>
+    
+    <section id="about" class="content">
+        <h2>About Us</h2>
+        <p>This is a sample content section with different font styles.</p>
+    </section>
+    
+    <section id="services" class="content">
+        <h2>Our Services</h2>
+        <div class="card">Service 1</div>
+        <div class="card">Service 2</div>
+        <div class="card">Service 3</div>
+    </section>
+    
+    <footer>
+        <p>Follow us on:</p>
+        <i class="uil uil-facebook"></i>
+        <i class="uil uil-twitter"></i>
+        <i class="uil uil-instagram"></i>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
