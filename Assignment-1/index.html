@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IET DAVV - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-section {
+            background: url(banner.jpg) no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .navbar {
+            background-color: #990000;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #990000;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .news-section ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.1rem;
+        }
+
+        .news-section li {
+            margin-bottom: 15px;
+        }
+
+        .news-section li strong {
+            color: #990000;
+        }
+
+        .department-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .department-item {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .department-item h3 {
+            color: #990000;
+            margin-bottom: 15px;
+            font-size: 1.7rem;
+        }
+
+        .department-item:hover {
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transform: translateY(-10px);
+        }
+
+        .department-item ul {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .footer {
+            background-color: #990000;
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+        }
+
+        .footer-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Grid for News and Contact */
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .grid-item {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-item h3 {
+            color: #990000;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .hero-section {
+                font-size: 1.8rem;
+                height: 50vh;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .department-list {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-links {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .footer-links a {
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.jpeg" alt="IET DAVV Logo"> IET DAVV
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#departments">Departments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#admissions">Admissions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="hero-section">
+        Institute of Engineering & Technology, DAVV
+    </div>
+    
+    <div class="container my-4">
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="section-title">About Us</h2>
+            <p>The Institute of Engineering & Technology (IET), DAVV, Indore, is a premier institute providing engineering education with a focus on academic excellence and research. Established in 1997, IET DAVV offers a variety of undergraduate and postgraduate courses in different disciplines of engineering.</p>
+            <h3>Our Vision</h3>
+            <p>To be a globally recognized institution that contributes to the advancement of knowledge, skills, and technologies in the field of engineering and technology.</p>
+            <h3>Our Mission</h3>
+            <ul>
+                <li>To provide world-class education and research opportunities in the field of engineering.</li>
+                <li>To foster critical thinking and innovation in all our students.</li>
+                <li>To enhance the employability and leadership potential of students.</li>
+            </ul>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="mt-4">
+            <h2 class="section-title">Latest News</h2>
+            <div class="grid-layout">
+                <div class="grid-item">
+                    <h3>Admissions Open for 2025</h3>
+                    <p>Apply now for undergraduate and postgraduate courses at IET DAVV.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Innovation Challenge 2025</h3>
+                    <p>The college will host its annual innovation challenge. Students can showcase their projects and win exciting prizes.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Research Grant for AI</h3>
+                    <p>IET DAVV has received funding for research in Artificial Intelligence and Robotics. Students and faculty will work on cutting-edge technology.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Campus Placement Drive</h3>
+                    <p>IET DAVV maintains excellent campus placement records with top global tech companies.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Departments Section -->
+        <section id="departments" class="mt-4">
+            <h2 class="section-title">Departments</h2>
+            <div class="department-list">
+                <div class="department-item">
+                    <h3>Computer Engineering</h3>
+                    <p>The Computer Engineering department emphasizes areas such as Software Development, Data Structures, and Algorithms, along with emerging technologies like AI and Machine Learning.</p>
+                    <h4>Key Research Areas:</h4>
+                    <ul>
+                        <li>AI & Machine Learning</li>
+                        <li>Big Data & Data Science</li>
+                        <li>Cybersecurity</li>
+                    </ul>
+                </div>
+                <div class="department-item">
+                    <h3>Information Technology</h3>
+                    <p>This department focuses on Information Systems, Cloud Computing, and Internet of Things (IoT), providing hands-on experience in the latest IT technologies.</p>
+                    <h4>Key Research Areas:</h4>
+                    <ul>
+                        <li>Cloud Computing</li>
+                        <li>IoT & Embedded Systems</li>
+                        <li>Blockchain Technology</li>
+                    </ul>
+                </div>
+                <div class="department-item">
+                    <h3>Electronics & Communication</h3>
+                    <p>Offering programs related to Electronics, Telecommunication, and Signal Processing, the department focuses on practical training and research in communication technologies.</p>
+                    <h4>Key Research Areas:</h4>
+                    <ul>
+                        <li>Signal Processing</li>
+                        <li>Telecommunication</li>
+                        <li>Embedded Systems</li>
+                    </ul>
+                </div>
+                <div class="department-item">
+                    <h3>Mechanical Engineering</h3>
+                    <p>Focusing on innovations in mechanical systems, automation, and thermal engineering, this department prepares students for careers in industries like manufacturing and robotics.</p>
+                    <h4>Key Research Areas:</h4>
+                    <ul>
+                        <li>Robotics</li>
+                        <li>Automation</li>
+                        <li>Thermal Engineering</li>
+                    </ul>
+                </div>
+                <div class="department-item">
+                    <h3>Civil Engineering</h3>
+                    <p>This department specializes in Infrastructure development, Environmental Engineering, and Structural Design, with an emphasis on sustainability and smart cities.</p>
+                    <h4>Key Research Areas:</h4>
+                    <ul>
+                        <li>Structural Engineering</li>
+                        <li>Geotechnical Engineering</li>
+                        <li>Environmental Engineering</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admissions Section -->
+        <section id="admissions" class="mt-4">
+            <h2 class="section-title">Admissions</h2>
+            <p>Admission to various undergraduate and postgraduate courses is based on merit, entrance exams, and university guidelines. The process ensures transparency and provides ample opportunities for deserving candidates.</p>
+            <h3>Eligibility Criteria:</h3>
+            <ul>
+                <li>For Undergraduate Programs: A minimum of 50% marks in 10+2 with Physics, Chemistry, and Mathematics as subjects.</li>
+                <li>For Postgraduate Programs: A B.Tech/BE degree with a minimum of 60% marks in the relevant discipline.</li>
+            </ul>
+            <h3>Admission Procedure:</h3>
+            <ul>
+                <li>Step 1: Fill the online application form.</li>
+                <li>Step 2: Appear for the entrance exam if required.</li>
+                <li>Step 3: Document verification and seat allotment.</li>
+                <li>Step 4: Confirmation and fee payment.</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mt-4">
+            <h2 class="section-title">Contact Us</h2>
+            <p>For more information, please feel free to contact us:</p>
+            <p><strong>Email:</strong> info@ietdavv.edu.in</p>
+            <p><strong>Phone:</strong> +91-731-XXXXX</p>
+            <p><strong>Address:</strong> IET DAVV, Khandwa Road, Indore, Madhya Pradesh, India</p>
+            <h3>Follow Us:</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/ietdavv" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/ietdavv" target="_blank">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/school/iet-davv/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#departments">Departments</a>
+            <a href="#news">News</a>
+            <a href="#admissions">Admissions</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <p>&copy; 2025 IET DAVV | All Rights Reserved</p>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
